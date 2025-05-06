@@ -106,14 +106,32 @@ h2{
     padding-top: 10px;
 }
 .footer{
-    display: flex;
+    display:flex;
     height: 250px;
     background-color: #000;
     background-size: contain;
     padding-top: 0px;
-    padding-left: 100px;
+    padding-left: 50px;
     
 }
+
+.top{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.wid{
+    padding-left: 50px;
+
+}
+.footer .dets{
+    padding-left: 150px;
+}
+
+
 
 .footer p{
     text-align: left;
@@ -153,9 +171,7 @@ body .footer .fa{
 body .footer i{
     margin-right: 30px;
 }
-.widget{
-    margin:100px 0 0 60px;
-}
+
 .lis{
     display: flex;
     margin-top: 40px;
@@ -214,14 +230,27 @@ body .footer i{
         align-items: center;
         padding: 0;
     }
-    
-    .widget{
-        display: none;
+    .footer{
+        height: 450px;
+        display: block;
+        padding: 0px;
+    }
+    .top{
+        padding-top: 30px;
+        display: list-item;
+        justify-content: center;
+    }
+    .wid{
+        padding: 10px 0px;
+        justify-items: center;
     }
      body .banner1 .fa{
         cursor: pointer;
         display: block;
         font-size: 25px
+    }
+    .dets{
+        padding-left: 50px;
     }
 }
     
