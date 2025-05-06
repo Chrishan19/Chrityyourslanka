@@ -1,0 +1,135 @@
+<html>
+
+<head>
+    <title>Christytourslanka</title>
+    <link rel="icon" href="img/icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style about me.css">
+    <link rel="stylesheet" href="style guest comments.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div class="banner1">
+       
+        
+        <div class="navbar">
+         
+          <img src="img/logonew.png" class="logo" >
+           <i onclick="showmenu()" class="fa fa-bars" style="padding-right: 20px;color: #fff;"></i>
+             <div class="nav-link" id="navlink">
+              <ul>
+             <i onclick="hidemenu()" class="fa fa-times" style="padding-top:20px;padding-left: 20px; color: #000;"></i>
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="About me.html">ABOUT ME</a></li>
+              <li><a href="model tours.html">MODEL TOURS</a></li>
+              <li><a href="Sri lanka.html">SRI LANKA</a></li>
+              <li><a href="Guest comments.html">GUEST COMMENTS</a></li>
+              <li><a href="Gallery.html">GALLERY</a></li>
+              <li><a href="Contact.html">CONTACT</a></li>
+               
+           </ul>
+           
+              
+           </div>
+       </div>
+      
+          
+          <h4>GUEST COMMENTS</h4></div> 
+       
+          <div class="contac"> 
+            <form action="https://api.web3forms.com/submit" method="POST" class="comment-left">
+                <div class="comment-left-title">
+                    <h2>Give Your Feedback</h2>
+                    <hr>
+                </div>
+                <input type="hidden" name="access_key" value="0ddeedf6-6044-44a5-904e-91af4843c254">
+                <input type="text" name="name" placeholder="Your Name" class="comment-input" required>
+                <input type="email" name="email" placeholder="Your Email" class="comment-input" required>
+                <textarea name="message" placeholder="Your message" class="comment-input" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        
+            <div class="comment-right">
+                <img src="right_img.png" alt="">
+            </div>
+        </div>
+        
+        <script>
+        document.querySelector(".comment-left").addEventListener("submit", function (e) {
+            e.preventDefault();
+        
+            const form = this;
+            const formData = new FormData(form);
+        
+            fetch(form.action, {
+                method: "POST",
+                body: formData
+            })
+            .then(response => {
+                if (response.ok) {
+                    alert("Thank you for your feedback!");
+                    form.reset();
+                } else {
+                    alert("Submission failed. Please try again.");
+                }
+            })
+            .catch(() => {
+                alert("An error occurred. Please try later.");
+            });
+        });
+        </script>
+        
+       
+       
+
+    <div onclick="scrolltotop()" class="scrolltop">To top🔼</div>
+          
+    <script>
+        function scrolltotop() {
+               window.scroll(0, 0);
+         }
+         function showmenu(){
+        document.getElementById("navlink").style.display = "block";
+        }
+        function hidemenu(){
+        document.getElementById("navlink").style.display = "none";
+        }
+
+    
+    </script>
+        
+    
+    
+   <section class="footer">
+     
+      <div class="dets">
+       <p>No.54/C,Convent Road,<br>Palagathure,Kochchikade,<br>Sri Lanka. <br>Mobile: +94 777329894,+94 778778675 <br> Email: <a href = "mailto: wfchristy@gmail.com">wfchristy@gmail.com</a> </p>
+       
+          <div class="lis">
+           <i class="fa fa-facebook" style="color:blue;"></i>
+           <i class="fa fa-twitter" style="color:deepskyblue;"></i>
+           <i class="fa fa-instagram" style="color:darkorange;"></i>
+           <i onclick="opentrip()" class="fa fa-tripadvisor" style="color: aquamarine;" ></i>
+           
+         
+           </div>
+           </div>  
+     <div class="widget">
+         <div id="TA_cdsscrollingravenarrow139" class="TA_cdsscrollingravenarrow"><ul id="oIEyO0UnUAO" class="TA_links sdnWqOEVn0"><li id="TvO0wCek55" class="m6E7a5M"><a target="_blank" href="https://www.tripadvisor.com/Attraction_Review-g297897-d19988358-Reviews-Christy_Tours_Sri_Lanka-Negombo_Western_Province.html"><img src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_lockup_vertical.svg" alt="TripAdvisor" class="widEXCIMG" id="CDSWIDEXCLOGO"/></a></li></ul></div><script async src="https://www.jscache.com/wejs?wtype=cdsscrollingravenarrow&amp;uniq=139&amp;locationId=19988358&amp;lang=en_US&amp;border=true&amp;display_version=2" data-loadtrk onload="this.loadtrk=true"></script>
+         
+     </div>   
+    <div class="widget">
+        <div id="TA_cdsratingsonlywide895" class="TA_cdsratingsonlywide"><ul id="t9sd6ah" class="TA_links 7BYkbkLLw3"><li id="seTfbj" class="M2c2vtEeEQO"><a target="_blank" href="https://www.tripadvisor.com/Attraction_Review-g297897-d19988358-Reviews-Christy_Tours_Sri_Lanka-Negombo_Western_Province.html"><img src="https://www.tripadvisor.com/img/cdsi/img2/branding/v2/Tripadvisor_lockup_horizontal_secondary_registered-18034-2.svg" alt="TripAdvisor"/></a></li></ul></div><script async src="https://www.jscache.com/wejs?wtype=cdsratingsonlywide&amp;uniq=895&amp;locationId=19988358&amp;lang=en_US&amp;border=true&amp;shadow=true&amp;backgroundColor=gray&amp;display_version=2" data-loadtrk onload="this.loadtrk=true"></script>
+    </div>
+       
+   </section>
+</body>
+
+ 
+    
+
+
+
+</html>
