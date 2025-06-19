@@ -1,0 +1,17 @@
+*{
+    padding: 0;
+    margin: 50px 0 0 50px;
+}
+
+.test ul li{
+    list-style: none;
+    
+}
+.test ul li a{
+    border: solid;
+    padding: 20px;
+    color: bisque;
+}
+.test{
+    display: inline-grid;
+}
