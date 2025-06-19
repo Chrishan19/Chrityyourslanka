@@ -217,7 +217,7 @@ body .footer i{
 }
 
 
-@media(max-width: 600px){
+@media(max-width: 800px){
     .logo{
         width: 40%;
     }
